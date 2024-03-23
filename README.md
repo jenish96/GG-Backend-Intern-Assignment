@@ -22,9 +22,11 @@ Before you begin, ensure you have the following installed on your machine:
 3. Update the connection database : "YOUR DB NAME" in config -> db.js
 
 
-### Postman - API Documentaion
+
+## Postman - API Documentaion
 
 - Check In Repository - GG-Backend Intern Assignment.postman_collection.json file Import in Postman
+
 
 ## APIs
 
@@ -34,13 +36,15 @@ Before you begin, ensure you have the following installed on your machine:
   ```
 
 * List - Find Events
-- Pass Following Query Parameter
-<pre>
-<b>latitude</b> 
-<b>longitude</b> 
-<b>date</b> 
-<b>page</b> 
-</pre> 
-  ```bash
+    ```bash
   http://127.0.0.1:5000/api/v1/events/find
   ```
+
+Pass Following Query Parameter
+<pre>
+<b>latitude  : 40.7128</b> 
+<b>longitude : -74.0060</b> 
+<b>date      : 2024-03-15</b> 
+<b>page      : 1 </b> 
+</pre> 
+
