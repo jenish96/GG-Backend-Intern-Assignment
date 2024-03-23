@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "a1b0cc91-1abd-40e2-9c9f-1ead1b94c901",
+		"name": "GG-Backend Intern Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21516961"
+	},
+	"item": [
+		{
+			"name": "Add Event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"event_name\":\"New Event\",\r\n    \"city_name\":\"surat\",\r\n    \"date\":\"2024/03/27\",\r\n    \"time\":\"7:39:00\",\r\n    \"latitude\":\"21.212\",\r\n    \"longitude\":\"24.324\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/events",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Events",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"event_name\":\"New Event\",\r\n    \"city_name\":\"surat\",\r\n    \"date\":\"2024/03/21\",\r\n    \"time\":\"7:39:00\",\r\n    \"latitude\":\"21.212\",\r\n    \"longitude\":\"24.324\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/events/find?latitude=40.7128&longitude=-74.0060&date=2024-03-15&page=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"events",
+						"find"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "40.7128"
+						},
+						{
+							"key": "longitude",
+							"value": "-74.0060"
+						},
+						{
+							"key": "date",
+							"value": "2024-03-15"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
